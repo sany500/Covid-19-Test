@@ -1,0 +1,73 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "email": "sany500@gmail.com",
+      "password": "123"
+    }
+  ],
+  "user": [
+    {
+      "name": "Rezve",
+      "age": "27",
+      "email": "rezvey@gmail.com",
+      "mobile": "016624526521",
+      "gender": "Male",
+      "address": "Dhaka",
+      "bloodGroup": "O+",
+      "symptom": "None",
+      "id": 3
+    },
+    {
+      "name": "ikdsd",
+      "age": "dfdsf",
+      "email": "dfds",
+      "mobile": "ggh",
+      "gender": "Male",
+      "address": "hfgtjh",
+      "bloodGroup": "A+",
+      "symptom": "jyugkl",
+      "id": 4
+    }
+  ],
+  "approved": [
+    {
+      "name": "Mizan",
+      "age": "27",
+      "email": "mizan@gmail.com",
+      "mobile": "016624526522",
+      "gender": "Male",
+      "address": "Dhaka",
+      "id": 1
+    },
+    {
+      "name": "Rasel",
+      "age": " 26",
+      "email": "fm.rasel@gmail.com",
+      "mobile": "01756565256",
+      "gender": "Male",
+      "address": "Pabna",
+      "id": 2
+    }
+  ],
+  "modal": [
+    {
+      "name": "Mizan",
+      "age": "27",
+      "email": "mizan@gmail.com",
+      "mobile": "016624526522",
+      "gender": "Male",
+      "address": "Dhaka",
+      "id": 1
+    },
+    {
+      "name": "Rasel",
+      "age": " 26",
+      "email": "fm.rasel@gmail.com",
+      "mobile": "01756565256",
+      "gender": "Male",
+      "address": "Pabna",
+      "id": 2
+    }
+  ]
+}

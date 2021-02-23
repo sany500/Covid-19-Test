@@ -1,0 +1,38 @@
+<div class="mt-5">
+    <div class="d-flex justify-content-center mb-3">
+      <h2> Payment List</h2>
+    </div>
+    <hr>
+  
+  
+    <table class="table table-striped table-bordered">
+      <thead>
+        <tr>
+  
+          <th>Name</th>
+          <th>Age</th>
+          <th class="d-flex justify-content-center">Email</th>
+          <th>Mobile</th>
+          <th>Gender</th>
+          <th>Address</th>
+          <th>Total Payment(Taka)</th>
+          
+          
+  
+        </tr>
+  
+      <tbody>
+        <tr *ngFor="let user of users">
+  
+          <td>{{user.name}}</td>
+          <td>{{user.age}}</td>
+          <td>{{user.email}}</td>
+          <td>{{user.mobile}}</td>
+          <td>{{user.gender}}</td>
+          <td>{{user.address}}</td>
+          <td>3300</td>
+            
+        </tr>
+      </tbody>
+    </table>
+  </div>

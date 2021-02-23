@@ -1,0 +1,58 @@
+<div class="mt-5">
+  <div class="d-flex justify-content-center mb-3">
+    <h2> Requested Appoinment List</h2>
+  </div>
+  <hr>
+
+
+  <table class="table table-striped table-bordered">
+    <thead>
+      <tr>
+
+        <th>Name</th>
+        <th>Age</th>
+        <th class="d-flex justify-content-center">Email</th>
+        <th>Mobile</th>
+        <th>Gender</th>
+        <th>Address</th>
+        <th>Blood Group</th>
+        <th>Symptom</th>
+        <th class="d-flex justify-content-center">Appoinment Date</th>
+        <th><input type="hidden" name=""></th>
+        <th class="d-flex justify-content-center">Action</th>
+
+      </tr>
+
+    <tbody>
+      <tr *ngFor="let user of users">
+
+        <td>{{user.name}}</td>
+        <td>{{user.age}}</td>
+        <td>{{user.email}}</td>
+        <td>{{user.mobile}}</td>
+        <td>{{user.gender}}</td>
+        <td>{{user.address}}</td>
+        <td>{{user.bloodGroup}}</td>
+        <td>{{user.symptom}}</td>
+        <td><input type="date" name="date" id="" #f></td>
+        <td>
+          <form #hiddenForm="ngForm" (ngSubmit)="approveAppoint(hiddenForm.value)">
+              <input type="hidden" value="{{user.name}}" name="name" id="" [(ngModel)]="approveObj.name">
+              <input type="hidden" value="{{user.age}}" name="age" id="" [(ngModel)]="approveObj.age">
+              <input type="hidden" value="{{user.email}}" name="email" id="" [(ngModel)]="approveObj.email">
+              <input type="hidden" value="{{user.mobile}}" name="mobile" id="" [(ngModel)]="approveObj.mobile">
+              <input type="hidden" value="{{user.gender}}" name="gender" id="" [(ngModel)]="approveObj.gender">
+              <input type="hidden" value="{{user.address}}" name="address" id="" [(ngModel)]="approveObj.address">
+              <input type="hidden" value="{{f.date}}" name="date" id="" [(ngModel)]="approveObj.date">
+              
+          </form>
+          </td>
+          <td><button (click)="approveAppoint(user);deleteUser(user)" class="btn btn-success mr-1">Approve </button>
+            <button class="btn btn-danger" (click)="deleteUser(user)"> Cancel</button>
+          </td>
+
+        
+      </tr>
+    </tbody>
+  </table>
+</div>
