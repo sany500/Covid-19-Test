@@ -1,8 +1,8 @@
 <<<<<<< HEAD
-# Covid19Tracker
-Covid19 Tracker app with Pro Angular 9
+
+Covid19 Test & Tracker app with Pro Angular 9
 =======
-# Covid19Tracker9
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.0.
 
